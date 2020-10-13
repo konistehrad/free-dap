@@ -34,14 +34,14 @@
 #include "hal_gpio.h"
 
 /*- Definitions -------------------------------------------------------------*/
-HAL_GPIO_PIN(SWCLK_TCK,    B, 11)
-HAL_GPIO_PIN(SWDIO_TMS,    B, 17)
-HAL_GPIO_PIN(TDI,          A, 8)
-HAL_GPIO_PIN(TDO,          A, 9)
-HAL_GPIO_PIN(nTRST,        B, 23)
-HAL_GPIO_PIN(nRESET,       A, 2)
+HAL_GPIO_PIN(SWCLK_TCK,    A, 2)
+HAL_GPIO_PIN(SWDIO_TMS,    A, 9)
+HAL_GPIO_PIN(TDI,          A, 14) // what
+HAL_GPIO_PIN(TDO,          A, 15) // ever
+HAL_GPIO_PIN(nTRST,        A, 6) // man
+HAL_GPIO_PIN(nRESET,       A, 7)
 
-HAL_GPIO_PIN(LED,          B, 30)
+HAL_GPIO_PIN(LED,          A, 10)
 
 #define DAP_CONFIG_ENABLE_SWD
 //#define DAP_CONFIG_ENABLE_JTAG
@@ -54,8 +54,8 @@ HAL_GPIO_PIN(LED,          B, 30)
 
 // Set the value to NULL if you want to disable a string
 // DAP_CONFIG_PRODUCT_STR must contain "CMSIS-DAP" to be compatible with the standard
-#define DAP_CONFIG_VENDOR_STR          "Alex Taradov"
-#define DAP_CONFIG_PRODUCT_STR         "Generic CMSIS-DAP Adapter"
+#define DAP_CONFIG_VENDOR_STR          "Alex Taradov + Conrad Kreyling"
+#define DAP_CONFIG_PRODUCT_STR         "Trinket M0 CMSIS-DAP Adapter"
 #define DAP_CONFIG_SER_NUM_STR         "123456"
 #define DAP_CONFIG_FW_VER_STR          "v0.1"
 #define DAP_CONFIG_DEVICE_VENDOR_STR   NULL
