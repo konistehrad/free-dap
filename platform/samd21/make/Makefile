@@ -40,7 +40,7 @@ SRCS += \
   ../startup_samd21.c
 
 DEFINES += \
-  -D__SAMD21J18A__ \
+  -D__SAMD21E18A__ \
   -DDONT_USE_CMSIS_INIT \
   -DF_CPU=48000000 
 
