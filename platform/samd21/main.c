@@ -111,6 +111,17 @@ int main(void)
   dap_init();
   usb_init();
 
+  //signal start to user by blinking LED
+  uint32_t delay = DAP_CONFIG_DELAY_CONSTANT * 100;
+  for ( int i=0;i<4;i++ ) {
+    HAL_GPIO_LED_clr();
+    delay = DAP_CONFIG_DELAY_CONSTANT * 100;
+    while (--delay) asm("nop");
+    HAL_GPIO_LED_set();
+    delay = DAP_CONFIG_DELAY_CONSTANT * 100;
+    while (--delay) asm("nop");
+  }
+
   while (1);
 
   return 0;
