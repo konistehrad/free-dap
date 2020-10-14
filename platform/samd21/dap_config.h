@@ -34,12 +34,12 @@
 #include "hal_gpio.h"
 
 /*- Definitions -------------------------------------------------------------*/
-HAL_GPIO_PIN(SWCLK_TCK,    A, 2)
-HAL_GPIO_PIN(SWDIO_TMS,    A, 9)
-HAL_GPIO_PIN(TDI,          A, 14) // what
-HAL_GPIO_PIN(TDO,          A, 15) // ever
-HAL_GPIO_PIN(nTRST,        A, 6) // man
-HAL_GPIO_PIN(nRESET,       A, 7)
+HAL_GPIO_PIN(SWCLK_TCK,    A, 6)
+HAL_GPIO_PIN(SWDIO_TMS,    A, 7)
+HAL_GPIO_PIN(TDI,          B, 14) // what
+HAL_GPIO_PIN(TDO,          B, 15) // ever
+HAL_GPIO_PIN(nTRST,        B, 6)  // man
+HAL_GPIO_PIN(nRESET,       A, 8)
 
 HAL_GPIO_PIN(LED,          A, 10)
 
